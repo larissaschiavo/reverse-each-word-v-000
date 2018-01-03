@@ -1,8 +1,6 @@
 def reverse_each_word(str)
   spl_str = str.split(" ")
   ans = []
-  spl_str.each do |string|
-    ans << string.reverse
-  end
-  return ans.join(" ")
+  spl_str.collect {|x| x.reverse }
+  spl_str.join(" ")
 end
